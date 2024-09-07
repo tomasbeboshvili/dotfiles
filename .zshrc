@@ -3,14 +3,28 @@
 
 alias upd="sudo dnf update"
 alias upg="sudo dnf upgrade"
-alias kitconf="nano /.config/kitty/kitty.conf"
+
+alias kitconf="nano ~/.config/kitty/kitty.conf"
+alias hyprconf="nano ~/.config/hypr/hyprland.conf"
+
+alias con="nm-applet"
+alias cl="clear && krabby name lucario -s -i"
+alias srz="source ~/.zshrc"
 # Path to your Oh My Zsh installation.
 
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:$HOME/.cargo/bin"
 
-# los pokemon de la Pokédex aquí
+
+# El script de la Pokédex
+# krabby es el comando que lo ejecuta, puedo poner name para que
+#   aparezca un pokemon en específico, o random para aleatorio
+# Los números son para indicar la generación(sin números se
+#   incluyen todas).
+# -s para que sea shiny
+# -i para la entrada de la pokédex
+
 krabby random 1-5 -s -i
 
 # Set name of the theme to load --- if set to "random", it will
@@ -69,7 +83,7 @@ ZSH_THEME="bira"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+ HIST_STAMPS="dd.mm.yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
