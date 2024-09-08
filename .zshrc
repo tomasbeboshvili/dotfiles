@@ -15,7 +15,7 @@ alias srz="source ~/.zshrc"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:$HOME/.cargo/bin"
-
+#export PATH="$HOME/Android\ Studio/"
 
 # El script de la Pokédex
 # krabby es el comando que lo ejecuta, puedo poner name para que
