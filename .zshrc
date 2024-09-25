@@ -4,12 +4,15 @@
 alias upd="sudo dnf update"
 alias upg="sudo dnf upgrade"
 
+alias vpn="ssh tomas.beboshvili@triqui.fi.upm.es"
+alias vsc="code"
 alias kitconf="nano ~/.config/kitty/kitty.conf"
 alias hyprconf="nano ~/.config/hypr/hyprland.conf"
 
 alias con="nm-applet"
 alias cl="clear && krabby name lucario -s -i"
 alias srz="source ~/.zshrc"
+alias ff="fastfetch"
 # Path to your Oh My Zsh installation.
 
 export ZSH="$HOME/.oh-my-zsh"
@@ -19,12 +22,11 @@ export PATH="$PATH:$HOME/.cargo/bin"
 
 # El script de la Pokédex
 # krabby es el comando que lo ejecuta, puedo poner name para que
-#   aparezca un pokemon en específico, o random para aleatorio
+# aparezca un pokemon en específico, o random para aleatorio
 # Los números son para indicar la generación(sin números se
-#   incluyen todas).
+# incluyen todas).
 # -s para que sea shiny
 # -i para la entrada de la pokédex
-
 krabby random 1-5 -s -i
 
 # Set name of the theme to load --- if set to "random", it will
